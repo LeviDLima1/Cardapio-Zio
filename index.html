@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Zio Sabores</title>
+</head>
+<body>
+    <!-- HEADER -->
+
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center flex items-center justify-center">
+        <div class="w-full flex flex-col items-center justify-center">
+            <img src="assets/logo-zio.png"
+            alt="Pizzaria Zio Sabores"
+            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
+
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white">Zio Sabores</h1>
+
+            <span class="font-medium text-white">Rua príncipe de Nassau 236 Fortaleza - CE</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white">Seg á Dom - 18:00 as 22:00</span>
+            </div>
+        </div>
+    </header>
+    <!-- FIM HEADER -->
+
+    <h2 class="text-2xl font-bold text-center mt-9 mb-6 md:text-3xl">
+        Conheça nosso menu
+    </h2>
+
+    <!-- INICIO MENU -->
+    <div id="menu">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img src="./assets/calabresa.jpg" alt="Pizza calabresa" 
+                class="w-28 y-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div class="w-full h-full flex flex-col justify-center">
+                    <p class="font-bold">Calabresa</p>
+                    <p class="text-sm">Molho Especial Zio, mozarela, calabresa e azeitonas verdes.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 25.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Calabresa"
+                        data-price="25.00">
+                            <ion-icon name="cart-outline" class="w-10 h-10 text-white"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/frango.jpg" alt="Pizza frango com catupiry" 
+                class="w-28 y-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div class="w-full h-full flex flex-col justify-center"">
+                    <p class="font-bold">Frango com Catupiry</p>
+                    <p class="text-sm">Molho Especial Zio, queijo mussarela, frango desfiado, requeijão cremoso e azeitonas verdes.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 27.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Calabresa"
+                        data-price="25.00">
+                            <ion-icon name="cart-outline" class="w-10 h-10 text-white"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/camarao.jpg" alt="Pizza camarao" 
+                class="w-28 y-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div class="w-full h-full flex flex-col justify-center">
+                    <p class="font-bold">Carmarão</p>
+                    <p class="text-sm">Molho especial la casa, queijo mozarela, camarão, alho frito, azeitona, cebola e orégano.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 32.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Camarão"
+                        data-price="32.00">
+                            <ion-icon name="cart-outline" class="w-10 h-10 text-white"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/marguerita.jpg" alt="Pizza Marguerita" 
+                class="w-28 y-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div class="w-full h-full flex flex-col justify-center">
+                    <p class="font-bold">File Mignon</p>
+                    <p class="text-sm">Molho especial la casa, queijo mussarela, filé mignon, azeitona, cebola e orégano.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 32.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="File Mignon"
+                        data-price="32.00">
+                            <ion-icon name="cart-outline" class="w-10 h-10 text-white"></ion-icon>
+                        </button>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/pepperoni.jpg" alt="Pizza Pepperoni" 
+                class="w-28 y-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div class="w-full h-full flex flex-col justify-center">
+                    <p class="font-bold">File Mignon</p>
+                    <p class="text-sm">Molho especial la casa, queijo mussarela, filé mignon, azeitona, cebola e orégano.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 32.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="File Mignon"
+                        data-price="32.00">
+                            <ion-icon name="cart-outline" class="w-10 h-10 text-white"></ion-icon>
+                        </button>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/file-mignon.jpg" alt="Pizza file mignon" 
+                class="w-28 y-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div class="w-full h-full flex flex-col justify-center">
+                    <p class="font-bold">File Mignon</p>
+                    <p class="text-sm">Molho especial la casa, queijo mussarela, filé mignon, azeitona, cebola e orégano.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 32.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="File Mignon"
+                        data-price="32.00">
+                            <ion-icon name="cart-outline" class="w-10 h-10 text-white"></ion-icon>
+                        </button>
+                    </div>
+                </div>    
+            </div>
+
+            
+            <!-- FIM PRODUTO ITEM -->
+
+        </main>
+
+    </div>
+    <!-- FIM MENU -->
+    
+</body>
+</html>
